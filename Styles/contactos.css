@@ -1,0 +1,43 @@
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid #d4af37;
+}
+
+.navbar-brand {
+    color: #d4af37 !important;
+    font-weight: bold;
+}
+
+h2 {
+    color: #d4af37 !important;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #d4af37;
+}
+
+h5 {
+    color: #ffffff !important;
+}
+
+.text-muted {
+    color: #aaaaaa !important;
+}
+
+.btn-success {
+    background-color: #d4af37;
+    border: none;
+    color: #000;
+}
