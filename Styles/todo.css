@@ -1,4 +1,3 @@
-/* Styles/todo.css */
 body {
     background-color: #0a0a0a;
     color: #ffffff;
@@ -21,15 +20,15 @@ h2 {
     border-radius: 12px;
 }
 
-/* CORRECCIÓN: Fondo negro y texto blanco para los inputs */
-.form-control, .form-select {
-    background-color: #000000 !important; /* Fondo negro total */
+.form-control,
+.form-select {
+    background-color: #000000 !important;
     border: 1px solid #444;
-    color: #ffffff !important; /* Texto blanco */
+    color: #ffffff !important;
 }
 
-/* Evita que se ponga blanco al hacer clic o escribir */
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     background-color: #000000 !important;
     color: #ffffff !important;
     border-color: #d4af37;
@@ -37,7 +36,6 @@ h2 {
     outline: none;
 }
 
-/* Asegura que el placeholder (texto de fondo) sea gris claro */
 .form-control::placeholder {
     color: #888;
 }

@@ -2,33 +2,43 @@ body {
     background-color: #0a0a0a;
     color: #ffffff;
 }
+
 .card {
     background-color: #161616;
     border: 1px solid #d4af37;
 }
+
 .card-header {
     background-color: #000 !important;
     color: #d4af37 !important;
     border-bottom: 1px solid #d4af37 !important;
 }
+
 #nombreDetalle {
     color: #ffffff !important;
 }
+
 .list-group-item {
     background-color: transparent;
     border-bottom: 1px solid #333;
     color: #ffffff !important;
 }
+
 .list-group-item strong {
     color: #d4af37;
 }
-#telefonoDetalle, #correoDetalle, #direccionDetalle {
+
+#telefonoDetalle,
+#correoDetalle,
+#direccionDetalle {
     color: #ffffff !important;
 }
+
 .btn-outline-primary {
     color: #d4af37;
     border-color: #d4af37;
 }
+
 .btn-outline-danger {
     color: #ff4d4d;
     border-color: #ff4d4d;

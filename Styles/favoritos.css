@@ -7,16 +7,14 @@ body {
     border-bottom: 1px solid #d4af37;
 }
 
-/* Título principal en Dorado */
 h2 {
     color: #d4af37 !important;
     border-left: 5px solid #d4af37;
     padding-left: 15px;
 }
 
-/* SUBTÍTULO en Dorado para que sea visible sobre el fondo blanco/negro */
 .text-muted {
-    color: #d4af37 !important; 
+    color: #d4af37 !important;
     font-weight: 500;
 }
 
@@ -26,12 +24,10 @@ h2 {
     transition: 0.3s;
 }
 
-/* Nombres en blanco */
 .card h5 {
     color: #ffffff !important;
 }
 
-/* NÚMEROS de teléfono dentro de la tarjeta en BLANCO */
 .card .text-muted {
     color: #ffffff !important;
     font-weight: normal;

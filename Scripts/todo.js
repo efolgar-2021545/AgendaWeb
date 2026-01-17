@@ -1,5 +1,3 @@
-// Scripts/todo.js
-
 let tareas = JSON.parse(localStorage.getItem('misTareas')) || [];
 let editandoId = null;
 
@@ -14,12 +12,12 @@ function agregarTarea() {
     if (texto.trim() === "") return alert("Escribe una tarea");
 
     if (editandoId !== null) {
-        // Modo Edición
+        // Editar
         tareas = tareas.map(t => t.id === editandoId ? { ...t, texto, prioridad: parseInt(prioridad) } : t);
         editandoId = null;
         document.getElementById('btnGuardarTarea').innerText = "Guardar Tarea";
     } else {
-        // Modo Nuevo
+        // Agregar
         const nuevaTarea = {
             id: Date.now(),
             texto: texto,
@@ -48,7 +46,7 @@ function editarTarea(id) {
 }
 
 function guardarYRenderizar() {
-    // Ordenar por prioridad (1 es más alto)
+    // Ordenar por prioridad Alto, Medio y Bajo
     tareas.sort((a, b) => a.prioridad - b.prioridad);
     localStorage.setItem('misTareas', JSON.stringify(tareas));
     renderizarTareas();

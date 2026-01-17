@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Obtenemos los datos de la memoria, si no hay nada ponemos un mensaje por defecto
+document.addEventListener('DOMContentLoaded', function () {
+    // Se consiguen los datos del Login y si no hay datos me muestra una advertencia
     const correo = localStorage.getItem('usuarioLogueado') || "Usuario no identificado";
     const pass = localStorage.getItem('passwordLogueada') || "********";
 
@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailElement = document.getElementById('perfilEmail');
     const passElement = document.getElementById('perfilPass');
 
-    if(emailElement) emailElement.innerText = correo;
-    if(passElement) passElement.innerText = pass;
+    if (emailElement) emailElement.innerText = correo;
+    if (passElement) passElement.innerText = pass;
 });
 
 function cerrarSesion() {
-    if(confirm("Cerrar Sesion")) {
-        // Borramos la memoria al salir por seguridad
+    if (confirm("Cerrar Sesion")) {
+        // Se borra todo al cerrar sesion
         localStorage.clear();
         window.location.href = 'index.html';
     }

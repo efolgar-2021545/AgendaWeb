@@ -25,12 +25,13 @@ body {
 }
 
 label.text-muted {
-    color: #d4af37 !important; /* Etiquetas en dorado */
+    color: #d4af37 !important;
     letter-spacing: 1px;
 }
 
-#perfilEmail, #perfilPass {
-    color: #ffffff; /* Datos que vienen del login en blanco */
+#perfilEmail,
+#perfilPass {
+    color: #ffffff;
     font-weight: 500;
 }
 

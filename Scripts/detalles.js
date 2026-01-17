@@ -6,7 +6,7 @@ const datosContactos = {
     "5": { nombre: "Fernando García", tel: "89653421", correo: "fernandogarcia@gmail.com" }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('nombreDetalle').innerText = c.nombre;
         document.getElementById('telefonoDetalle').innerText = c.tel;
         document.getElementById('correoDetalle').innerText = c.correo;
-        
+
         if (parseInt(id) > 2) {
             const badge = document.getElementById('badgeFavorito');
             if (badge) badge.style.display = 'none';
