@@ -1,0 +1,69 @@
+/* Styles/todo.css */
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid #d4af37;
+}
+
+h2 {
+    color: #d4af37 !important;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #161616;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+}
+
+/* CORRECCIÓN: Fondo negro y texto blanco para los inputs */
+.form-control, .form-select {
+    background-color: #000000 !important; /* Fondo negro total */
+    border: 1px solid #444;
+    color: #ffffff !important; /* Texto blanco */
+}
+
+/* Evita que se ponga blanco al hacer clic o escribir */
+.form-control:focus, .form-select:focus {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #d4af37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+    outline: none;
+}
+
+/* Asegura que el placeholder (texto de fondo) sea gris claro */
+.form-control::placeholder {
+    color: #888;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+.btn-success {
+    background-color: #d4af37;
+    border: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #b8962d;
+    color: #000;
+}
+
+.badge {
+    width: 70px;
+    padding: 8px;
+}
